@@ -1,0 +1,37 @@
+rank ={} # Initialize an empty dictionary to store ranks
+if a>b and a>c:# Check if 'a' is the greatest
+    rank["a"]=1 # Assign rank 1 to 'a'
+    if b>c: # Check if 'b' is greater than 'c'
+        rank['b']=2 #  Assign rank 2 to 'b'
+        rank['c']=3 # Assign rank 3 to 'c'
+    else: # Check if 'c' is greater than 'b'
+        rank['c']=2 # Assign rank 2 to 'c'
+        rank['b']=3 # Assign rank 3 to 'b'
+elif b>a and b>c: # Check if 'b' is the greatest
+    rank['b']=1 # Assign rank 1 to 'b'
+    if c>a: #   Check if 'c' is greater than 'a' 
+        rank['c']=2 # Assign rank 2 to 'c'
+        rank['a']=3 # Assign rank 3 to 'a'  
+    else:
+        rank['a']=2 # Assign rank 2 to 'a'
+        rank['c']=3 # Assign rank 3 to 'c'
+else:
+    rank['c']=1 # Assign rank 1 to 'c'
+    if a>b: # Check if 'a' is greater than 'b'
+        rank['a']=2 # Assign rank 2 to 'a'
+        rank['b']=3 # Assign rank 3 to 'b'
+    else:
+        rank['b']=2 # Assign rank 2 to 'b'
+        rank['a']=3 # Assign rank 3 to 'a'
+print(rank) # This code snippet ranks three variables 'a', 'b', and 'c' based on their values.
+# It uses a dictionary to store the ranks, where the keys are the variable names and the values are their ranks.    
+# The code checks the values of 'a', 'b', and 'c' to determine which one is the greatest and assigns ranks accordingly.
+# The ranks are assigned as follows:
+# 1 for the greatest, 2 for the second greatest, and 3 for the smallest.
+# Finally, it prints the rank dictionary to show the ranks of 'a', 'b', and 'c'.
+# Example usage:
+
+# a = 10, b = 20, c = 30    
+# Output: {'c': 1, 'b': 2, 'a': 3}
+# a = 30, b = 20, c = 10
+# Output: {'a': 1, 'b': 2, 'c': 3}
